@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dao Nguoc Mang</title>
+</head>
+<body>
+
+<script>
+    let array = [0,1,2,5,4,9,7];
+    document.write("Mang ban dau: " +array +"<br/>");
+    let x = Math.floor(array.length / 2);
+    for (let i = 0; i < x; i++) {
+        let a = array[i];
+        array[i] = array[array.length - 1 - i];
+        array[array.length - 1 - i] = a;
+    }
+    document.write("Mang dao nguoc: " +array);
+</script>
+
+</body>
+</html>
